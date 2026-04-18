@@ -1,7 +1,7 @@
 steps:
 # STEP 1 — Build Docker Image
 - name: 'gcr.io/cloud-builders/docker'
-args: ['build', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/devops-repo/app', '.']
+  args: ['build', '-t', 'europe-west1-docker.pkg.dev/$PROJECT_ID/devops-repo/app', '.']
 # STEP 2 — Security Scan (DevSecOps)
 # This commented code detects the vulnerability and stop the build if found
 # - name: 'aquasec/trivy'
